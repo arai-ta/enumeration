@@ -39,7 +39,7 @@ abstract class AbstractValueMultiton extends AbstractMultiton implements
      * @param ValueMultitonInterface|null $default         The default value to return.
      * @param bool|null                   $isCaseSensitive True if the search should be case sensitive.
      *
-     * @return static The first member with the supplied value, or the default value.
+     * @return static|null The first member with the supplied value, or the default value.
      */
     final public static function memberByValueWithDefault(
         $value,

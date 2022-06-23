@@ -41,7 +41,7 @@ abstract class AbstractMultiton implements MultitonInterface
      * @param MultitonInterface|null $default         The default value to return.
      * @param bool|null              $isCaseSensitive True if the search should be case sensitive.
      *
-     * @return static The member associated with the given string key, or the default value.
+     * @return static|null The member associated with the given string key, or the default value.
      */
     final public static function memberByKeyWithDefault(
         $key,
